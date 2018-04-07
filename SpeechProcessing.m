@@ -90,6 +90,8 @@ end
 %Make a plot to see what is speech and what is not
 plot(Speech)
 hold on
-plot(IsSpeech/40)   %the scaling factor /40 might not be ideal to visualize any speech signal: it depends on the amplitude of the signal.
+plot(IsSpeech*max(Speech)/2)   %the scaling factor 'max(Speech)/2' might not be ideal to visualize any speech signal.
 hold off
+
+%% It does not work perfectly: skips parts of words!
 
