@@ -1,0 +1,74 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 20 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "TextTier" 
+        name = "wordseg" 
+        xmin = 0 
+        xmax = 20 
+        points: size = 20 
+        points [1]:
+            number = 0 
+            mark = "" 
+        points [2]:
+            number = 0.16666666666666666 
+            mark = "" 
+        points [3]:
+            number = 2.1666666666666687 
+            mark = "" 
+        points [4]:
+            number = 3.2333333333333316 
+            mark = "" 
+        points [5]:
+            number = 3.899999999999996 
+            mark = "" 
+        points [6]:
+            number = 4.599999999999993 
+            mark = "" 
+        points [7]:
+            number = 5.853799423393739 
+            mark = "" 
+        points [8]:
+            number = 6.599999999999986 
+            mark = "" 
+        points [9]:
+            number = 8.033333333333316 
+            mark = "" 
+        points [10]:
+            number = 8.59999999999998 
+            mark = "" 
+        points [11]:
+            number = 9.866666666666642 
+            mark = "" 
+        points [12]:
+            number = 10.899999999999972 
+            mark = "" 
+        points [13]:
+            number = 12.399999999999967 
+            mark = "" 
+        points [14]:
+            number = 13.233333333333297 
+            mark = "" 
+        points [15]:
+            number = 15.03333333333329 
+            mark = "" 
+        points [16]:
+            number = 15.499999999999956 
+            mark = "" 
+        points [17]:
+            number = 17.000000000000004 
+            mark = "" 
+        points [18]:
+            number = 17.96666666666672 
+            mark = "" 
+        points [19]:
+            number = 19.300000000000118 
+            mark = "" 
+        points [20]:
+            number = 19.733333333333473 
+            mark = "" 

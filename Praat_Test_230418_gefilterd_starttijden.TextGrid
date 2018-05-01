@@ -1,0 +1,77 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 20 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "TextTier" 
+        name = "wordseg" 
+        xmin = 0 
+        xmax = 20 
+        points: size = 21 
+        points [1]:
+            number = 0 
+            mark = "" 
+        points [2]:
+            number = 1.2333333333333338 
+            mark = "" 
+        points [3]:
+            number = 1.633333333333335 
+            mark = "" 
+        points [4]:
+            number = 2.666666666666667 
+            mark = "" 
+        points [5]:
+            number = 3.5666666666666638 
+            mark = "" 
+        points [6]:
+            number = 4.266666666666661 
+            mark = "" 
+        points [7]:
+            number = 5.466666666666657 
+            mark = "" 
+        points [8]:
+            number = 6.033333333333322 
+            mark = "" 
+        points [9]:
+            number = 7.499999999999983 
+            mark = "" 
+        points [10]:
+            number = 8.266666666666648 
+            mark = "" 
+        points [11]:
+            number = 9.499999999999977 
+            mark = "" 
+        points [12]:
+            number = 10.599999999999973 
+            mark = "" 
+        points [13]:
+            number = 11.933333333333302 
+            mark = "" 
+        points [14]:
+            number = 12.666666666666632 
+            mark = "" 
+        points [15]:
+            number = 14.533333333333292 
+            mark = "" 
+        points [16]:
+            number = 15.199999999999957 
+            mark = "" 
+        points [17]:
+            number = 15.833333333333288 
+            mark = "" 
+        points [18]:
+            number = 16.69999999999999 
+            mark = "" 
+        points [19]:
+            number = 17.333333333333353 
+            mark = "" 
+        points [20]:
+            number = 18.800000000000093 
+            mark = "" 
+        points [21]:
+            number = 19.400000000000123 
+            mark = "" 
