@@ -5,7 +5,7 @@ function coefMat = MelFreqCoef(Speech, Fs)
 blockL = 0.02*Fs;                %Length of blocks is 20ms -> has to be even so check with different Fs!!
 blockP = floor(0.375*blockL);    %Next block starts after blockP samples -> defines degree of  overlap in blocks
 
-nBlocks = 0;           %Loop to determine how many 20ms blocks we need to capture the full speech data
+nBlocks = 0;  %Loop to determine how many 20ms blocks we need to capture the full speech data
 for block = 1:100000
     blockStart = 1+(block-1)*blockP;
     blockEnd = blockStart + blockL;
@@ -32,8 +32,7 @@ for block = 1:nBlocks
     blockMat(block,:) = blockMat(block,:).*hamWindow;
 end
 
-%MEL-FREQUENCY-CEPSTRAL-COEFFICIENTS TRANSFORM
-%_____________________________________________
+%% Make the mel-frequency filtered features
 
 %Transform 20ms hamming-windowed time series into the frequency domain:
 FFTMat = zeros(nBlocks, blockL/2+1);       %Preallocation
@@ -55,12 +54,12 @@ upperBound = 8000;           %Basically the range of Hz you would work on (0-800
 melLower = 1125*log(1+lowerBound/700);           %Bottom of filterbank (0Hz) in Mel
 melUpper = 1125*log(1+upperBound/700);           %Upper limit of filterbank (8000Hz) in Mel
 triBanksMel = linspace(melLower,melUpper,nFilters+2);    %Linear spacing in Mel scale != linear spacing in Hz!; use 22 values
-                                                 %to later specify 20 triangular filters (20 MFC coeficcients)
+                                                 %to later specify 20 triangular filters (= 20 features)
 triBanksHz = 700*(exp(triBanksMel/1125)-1);      %Transform back to Hz                              
                               
 %The actual filterbank
 filterBankVec = zeros(nFilters,blockL/2+1);       %Preallocation
-for filter = 1:nFilters       %Take 20 filters
+for filter = 1:nFilters       %Make vectors as filters
     midFil = triBanksHz(filter+1);
     startFil = triBanksHz(filter);
     endFil = triBanksHz(filter+2);
